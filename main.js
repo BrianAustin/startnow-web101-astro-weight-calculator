@@ -11,7 +11,7 @@ var planets = [
     ['Mercury', 0.377],
     ['Sun', 27.9],
 ];
-
+//below reverses the order of the array, therefore reversing the order the planets appear in the UI dropdown list. A bonus item for the project.
 planets.reverse();
 
 var sel = document.getElementById('planets');
