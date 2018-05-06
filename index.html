@@ -9,42 +9,42 @@
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel='stylesheet' href='style.css' />
+    <link rel="stylesheet" href="style.css" />
 
   </head>
   <body>
-
-    <div class='container'>
-      <div className='page-header'>
-        <h1 className='text-white'>Astro Weight Calculator</h1>
-        <p className='lead text-white'>How much do you weigh on other planets (and a star, cause that's what the Sun is)</p>
+    <div class="container text-left">
+      <div class="page-header">
+          <h1 class="text-white">Astro Weight Calculator</h1>
+          <p class="lead text-white">How much do you weigh on other planets <small><em>(and a star, cause that"s what the Sun is. A star.)</em></small></p>
       </div>
-      <form>
-        <div class='row'>
-          <div class='col-md-4'>
-          <div class='panel panel-default'>
-            <div class='form-group'>
-              <label>Enter Weight Below</label>
-              <input id="user-weight" class='form-control' size='1' type="number" placeholder="Weight (lbs)" />
-            </div>
-            <div class='form-group'>
-              <label>Choose Planet</label>
-              <select id="planets" class='form-control' size='1'></select>
-            </div>  
-            </div>
-              <div class='form-group'>
-                <button id="calculate-button" class='form-control btn btn-info' type="text">Calculate</button>
-              <div class='panel-footer'></div>  
-            </div>
-            <div class='form-group'>
-              <p id="output" class='form-control'></p>
-            </div>
-          </div>
-          </div>
-        </div>  
-      </form>  
-    </div>
+      <div class="card w-50">
+        
+        <div class="card-header"><strong>Behold... the calculator...</strong></div>
+        <img class="card-img-top" src="galaxy-narrow.jpg" alt="galaxy">
 
+        <div class="card-body">
+          <h5 class"card-title"><strong>The Calculator</strong></h5>
+          <div class="form-group">
+            <label>Enter Weight Below</label>
+            <input id="user-weight" size="1" type="number" placeholder="Weight (lbs)" />
+          </div>
+          <div class="form-group"></div>
+            <label>Choose Planet</label>
+            <select id="planets" size="1" placeholder="click to select"></select>
+          </div>
+          <div class="form-group">
+            <button id="calculate-button" class="btn btn-info btn-block" type="text">Calculate</button>
+          </div>
+        </div>
+        <pre class="w-50" id="output">
+
+        </pre>
+      </div>     
+          
+    </div>
+    
+    
     <script src="main.js" charset="utf-8"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>

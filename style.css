@@ -1,10 +1,6 @@
 
 
 body {
-  /* Source: https://uigradients.com */
-  /* background: #DBE6F6;  
-  background: -webkit-linear-gradient(to right, #C5796D, #DBE6F6); 
-  background: linear-gradient(to right, #C5796D, #DBE6F6); */
   background-color:black;
   background-image:
   radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 40px),
